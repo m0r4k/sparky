@@ -25,7 +25,13 @@ root@server:~# systemctl restart sparksd
 ````  
   
 Sparks will be installed in your **~/.sparkscore** home directory so don't  
-forget to change parameters (ie masternodeprivkey) to fit your needs.
+forget to change parameters (ie masternodeprivkey) to fit your needs.  
+
+#### ALL DONE
+Then enable sparksd.service on startup
+````
+root@server:~# systemctl enable sparksd
+````  
 
 
 ### MAINTAINER of SPARKS
