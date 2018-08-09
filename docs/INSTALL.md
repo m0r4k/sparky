@@ -12,6 +12,13 @@ Download this GIT
 git clone https://m0r4k@bitbucket.org/m0r4k/sparky.git
 
 
+# PreInstall process \[add a user and put him in sudo group\]
+```` bash
+root@server:~# adduser sparky && adduser sparky sudo
+### choose something else than sparky as username ###
+
+````
+
 # Installation process
 ```` bash
 root@server:~# apt install git ufw fail2ban
@@ -25,7 +32,28 @@ root@server:~# apt-get -f install
 
 ````
 
+# PostInstall process
+```` bash
+user@server:~# sudo ufw default allow outgoing
+user@server:~# sudo ufw default deny incoming
+user@server:~# sudo ufw allow ssh/tcp
+user@server:~# sudo ufw limit ssh/tcp
+user@server:~# sudo ufw allow 8890/tcp
+user@server:~# sudo ufw logging on
+user@server:~# sudo ufw enable
 
+### or go to the scripts folder and do ###
+root@server:~/sparky/# sh ufw.sh
+
+````
+### ATTENTION  
+If ufw is complaining about ipv6 you need to check
+````
+root@server:~/# nano /etc/default/ufw
+### CHANGE Parameter ###
+
+IPV6 = false 
+````
 
 
 ## Dialog walkthrough
