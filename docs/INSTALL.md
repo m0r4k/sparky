@@ -2,10 +2,12 @@
 Prevered System => debian 9, ubuntu 16.04 +  
 Min Sysspecs => 1 CPU, 1Ghz, 1GB RAM, 2GB SWAP, 20GB HDD  
 
-### MAINTAINER
+### MAINTAINER of SPARKS
 Maintainer = http://sparkscoin.io  
 Explorer = http://expolorer.sparkscoin.io  
-Git repository =   https://github.com/SparksReborn/sparkspay.git  
+Sparks repo =   https://github.com/SparksReborn/sparkspay.git  
+Sentinel repo = https://github.com/SparksReborn/sentinel
+binary downoad = https://github.com/SparksReborn/sparkspay/releases
 
 ### REQUIREMENTS
 Download this GIT 
