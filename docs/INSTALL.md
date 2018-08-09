@@ -67,10 +67,9 @@ Here you are > if you left the Dialog with your external IP Settings empty
 this Dialog will show you what network script thinks your external IP is.  
 ***
 
-![Schema](img/crontab.png)
+![Schema](img/crontab.png)  
 Logout as root and login as "USER" type the command  
 
 ````bash
-crontab -l
-
+user@server:~# crontab -l
 ````
