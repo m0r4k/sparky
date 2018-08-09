@@ -28,6 +28,7 @@ I'm willing to learn from others! New coins will be supported on requests.
 
 ## Installation  
 Check the docs folder  
+see documentation [here](docs/INSTALL.md)
 
 
 ## Donation  
