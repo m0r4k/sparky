@@ -12,14 +12,36 @@ Download this GIT
 git clone https://m0r4k@bitbucket.org/m0r4k/sparky.git
 
 
-# PreInstall process \[add a user and put him in sudo group\]
+## PreInstall process 
+It's good to have a nonpriviledged user configured! Add user and  
+put him into **sudo** group  
 ```` bash
-root@server:~# adduser sparky && adduser sparky sudo
 ### choose something else than sparky as username ###
+root@server:~# adduser sparky && adduser sparky sudo
+
+### forbit the root to login with ssh (optional) ###
+root@server:~# nano /etc/ssh/sshd_config
+
+### CHANGE PARAMs TO ##
+.
+.
+PermitRootLogin no
+StrictModes yes
+.
+.
+
+### before you you logout the server test it with new ssh session ###
+root@server:~# systemctl restart sshd
 
 ````
+### ATTANTION
+If you don't plan to configure a new user and you change the **PermitRootLogin**  
+in your ssh server to **no**, you'll never be able to login from ssh again!  
+So before you logout the server test your login with your new configured user. If 
+this works you are fine to continue.
 
-# Installation process
+
+## Installation process
 ```` bash
 root@server:~# apt install git ufw fail2ban
 root@server:~# git clone https://m0r4k@bitbucket.org/m0r4k/sparky.git
@@ -32,7 +54,7 @@ root@server:~# apt-get -f install
 
 ````
 
-# PostInstall process
+## PostInstall process
 ```` bash
 user@server:~# sudo ufw default allow outgoing
 user@server:~# sudo ufw default deny incoming
