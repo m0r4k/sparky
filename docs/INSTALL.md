@@ -2,12 +2,38 @@
 Prevered System => debian 9, ubuntu 16.04 +  
 Min Sysspecs => 1 CPU, 1Ghz, 1GB RAM, 2GB SWAP, 20GB HDD  
 
+### Files and more
+Everybody who is not interested **SKIP** this info.  
+After sucessfull installation there will be a config folder in  
+**/opt/sparks**. This folder is not removed after install because you  
+could reinstall the package in terms of multible sparks installation   
+with multiIP settings.  
+  
+The sparksd.service is started with the -disablewallet flag, so if  
+you are choosing the hot-cold wallet mode you need no walletfunction on
+server.  
+  
+People who don't want to run a hot wallet on another system (ie Windows)  
+need to remove the startup parameter from sparksd.service an easy  
+command for this would be ...
+
+```` bash
+root@server:~# sed -i "s/\-disablewallet//g" /etc/systemd/system/sparksd.service
+### don't forget ###
+root@server:~# systemctl daemon-reload
+root@server:~# systemctl restart sparksd
+````  
+  
+Sparks will be installed in your **~/.sparkscore** home directory so don't  
+forget to change parameters (ie masternodeprivkey) to fit your needs.
+
+
 ### MAINTAINER of SPARKS
 Maintainer = http://sparkscoin.io  
 Explorer = http://expolorer.sparkscoin.io  
-Sparks repo =   https://github.com/SparksReborn/sparkspay.git  
-Sentinel repo = https://github.com/SparksReborn/sentinel  
-binary downoad = https://github.com/SparksReborn/sparkspay/releases
+sparks repo =   https://github.com/SparksReborn/sparkspay.git  
+sentinel repo = https://github.com/SparksReborn/sentinel  
+binary download = https://github.com/SparksReborn/sparkspay/releases
 
 ### REQUIREMENTS
 Download this GIT 
