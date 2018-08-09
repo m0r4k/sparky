@@ -23,10 +23,10 @@ install
 ## Dialog walkthrough
 
 
-![Schema](img/dialog_system_service.png)
+![Schema](img/dialog_system_service.png)  
 Accept if you want to install a system.service on your server the file
 will be located on **/etc/systemd/system/$coin_name.service
 
 
-![Schema](img/dialog_username.png)
+![Schema](img/dialog_username.png)  
 If you say *YES*
