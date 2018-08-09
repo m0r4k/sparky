@@ -6,7 +6,7 @@ Min Sysspecs => 1 CPU, 1Ghz, 1GB RAM, 2GB SWAP, 20GB HDD
 Maintainer = http://sparkscoin.io  
 Explorer = http://expolorer.sparkscoin.io  
 Sparks repo =   https://github.com/SparksReborn/sparkspay.git  
-Sentinel repo = https://github.com/SparksReborn/sentinel
+Sentinel repo = https://github.com/SparksReborn/sentinel  
 binary downoad = https://github.com/SparksReborn/sparkspay/releases
 
 ### REQUIREMENTS
