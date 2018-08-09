@@ -3,9 +3,9 @@ Prevered System => debian 9, ubuntu 16.04 +
 Min Sysspecs => 1 CPU, 1Ghz, 1GB RAM, 2GB SWAP, 20GB HDD  
 
 ### MAINTAINER
-Maintainer = http://sparkscoin.io
-Explorer = http://expolorer.sparkscoin.io
-Git repository =   https://github.com/SparksReborn/sparkspay.git
+Maintainer = http://sparkscoin.io  
+Explorer = http://expolorer.sparkscoin.io  
+Git repository =   https://github.com/SparksReborn/sparkspay.git  
 
 ### REQUIREMENTS
 Download this GIT 
